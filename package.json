@@ -1,0 +1,11 @@
+{
+  "name": "homework-pioneers",
+  "version": "1.0.0",
+  "description": "ДЗ: приложение по теме первооткрыватели и функции JS",
+  "scripts": {
+    "start": "npx live-server ."
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
