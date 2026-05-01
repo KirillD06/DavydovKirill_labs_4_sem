@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(2, 7, 26, 0.8) 0%, rgba(3, 9, 30, 0.92) 100%),
+    url("https://museumgagarin.ru/images/1home-03-slide-02.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  color: rgb(231, 242, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gagarin-topbar {
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  background: linear-gradient(180deg, rgba(3, 11, 34, 0.88) 0%, rgba(3, 11, 34, 0.45) 100%);
+  border-bottom: 1px solid rgba(106, 170, 245, 0.4);
+}
+
+.gagarin-brand-caption {
+  margin: 0;
+  font-size: 0.78rem;
+  color: rgb(99, 194, 255);
+  letter-spacing: 0.08em;
+}
+
+.gagarin-brand-name {
+  margin: 2px 0 0;
+  font-size: 1.85rem;
+  line-height: 1;
+  font-weight: 700;
+  color: rgb(60, 164, 255);
+}
+
+.gagarin-top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.gagarin-fast-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.gagarin-pill {
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgb(255, 104, 37);
+  color: rgb(255, 246, 238);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.gagarin-pill-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.gagarin-pill-link:hover {
+  filter: brightness(1.05);
+  color: rgb(255, 246, 238);
+}
+
+
+.gagarin-menu-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  color: rgb(106, 208, 255);
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.page-center {
+  min-height: calc(100vh - 108px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-shell {
+  border-radius: 16px;
+  border: 1px solid rgba(96, 164, 240, 0.4);
+  background: rgba(6, 15, 42, 0.76);
+  box-shadow: 0 16px 40px rgba(2, 6, 21, 0.45);
+  padding: 14px;
+}
+
+.author-info {
+  position: fixed;
+  top: 122px;
+  left: 14px;
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid rgba(127, 178, 239, 0.44);
+  border-radius: 8px;
+  background: rgba(23, 45, 90, 0.55);
+  color: rgb(213, 232, 255);
+  font-size: 14px;
+  z-index: 20;
+}
+
+.author-info summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.author-info p {
+  margin: 6px 0 0;
+}
+
+.calculator {
+  width: fit-content;
+  background: rgba(9, 23, 55, 0.84);
+  border: 1px solid rgba(129, 181, 247, 0.35);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 6px 16px rgba(0, 9, 31, 0.55);
+  box-sizing: border-box;
+}
+
+.result {
+  width: 248px;
+  height: 60px;
+  margin: 4px;
+  margin-bottom: 12px;
+  padding: 0 12px;
+  border: 1px solid rgba(129, 181, 247, 0.4);
+  border-radius: 8px;
+  background: rgba(7, 18, 43, 0.92);
+  color: rgb(226, 242, 255);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+}
+
+.my-btn {
+  width: 56px;
+  height: 52px;
+  margin: 4px;
+  border: 1px solid rgba(129, 181, 247, 0.4);
+  border-radius: 8px;
+  background: rgba(26, 56, 112, 0.85);
+  color: rgb(234, 245, 255);
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.my-btn:hover {
+  background: rgba(35, 71, 133, 0.95);
+}
+
+.my-btn:active {
+  filter: brightness(95%);
+}
+
+.my-btn.primary {
+  background: rgba(255, 104, 37, 0.93);
+  border-color: rgba(255, 162, 118, 0.9);
+}
+
+.my-btn.ravno {
+  color: rgb(255, 255, 255);
+}
+
+.my-btn.secondary {
+  background: rgba(31, 63, 120, 0.86);
+}
+
+.my-btn.execute {
+  width: 120px;
+}
+
+.lab-done {
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  margin: 0;
+  color: rgb(153, 195, 239);
+  font-size: 14px;
+  z-index: 20;
+}

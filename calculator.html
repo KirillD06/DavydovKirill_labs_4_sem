@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ЛР 2. Калькулятор (HTML + CSS + JS)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="gagarin-topbar">
+    <div class="gagarin-brand">
+      <p class="gagarin-brand-caption">ФГБУК МУЗЕЙ-ЗАПОВЕДНИК</p>
+      <p class="gagarin-brand-name">Ю. А. ГАГАРИНА</p>
+    </div>
+
+    <div class="gagarin-top-right">
+      <div class="gagarin-fast-links">
+        <span class="gagarin-pill">GAGARIN'S DICTATION</span>
+        <span class="gagarin-pill">BUY A TICKET</span>
+        <span class="gagarin-pill">PUSHKIN'S MAP</span>
+            <a class="gagarin-pill gagarin-pill-link" href="https://github.com/KirillD06/DavydovKirill_labs_4_sem" target="_blank" rel="noopener noreferrer">MY GITHUB</a>
+      </div>
+
+      <div class="gagarin-menu-links">
+        <span>MUSEUM</span>
+        <span>FOR GUESTS</span>
+        <span>MEDIA</span>
+        <span>SERVICES</span>
+        <span>YURI GAGARIN</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-center">
+    <section class="content-shell">
+      <div class="calculator">
+        <div id="result" class="result">0</div>
+        <div class="row">
+          <button id="btn_op_clear" class="my-btn secondary">C</button>
+          <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+          <button id="btn_op_percent" class="my-btn secondary">%</button>
+          <button id="btn_op_div" class="my-btn primary">/</button>
+        </div>
+        <div class="row">
+          <button id="btn_digit_7" class="my-btn">7</button>
+          <button id="btn_digit_8" class="my-btn">8</button>
+          <button id="btn_digit_9" class="my-btn">9</button>
+          <button id="btn_op_mult" class="my-btn primary">x</button>
+        </div>
+        <div class="row">
+          <button id="btn_digit_4" class="my-btn">4</button>
+          <button id="btn_digit_5" class="my-btn">5</button>
+          <button id="btn_digit_6" class="my-btn">6</button>
+          <button id="btn_op_minus" class="my-btn primary">-</button>
+        </div>
+        <div class="row">
+          <button id="btn_digit_1" class="my-btn">1</button>
+          <button id="btn_digit_2" class="my-btn">2</button>
+          <button id="btn_digit_3" class="my-btn">3</button>
+          <button id="btn_op_plus" class="my-btn primary">+</button>
+        </div>
+        <div class="row">
+          <button id="btn_digit_0" class="my-btn">0</button>
+          <button id="btn_digit_dot" class="my-btn">.</button>
+          <button id="btn_op_equal" class="my-btn primary execute ravno" >=</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <details class="author-info">
+    <summary>Автор</summary>
+    <p>ФИО: Давыдов Кирилл Игоревич</p>
+    <p>Группа: ИУ5-44Б</p>
+  </details>
+  <p class="lab-done">ЛР выполнена Давыдовым Кириллом Игоревичем</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
