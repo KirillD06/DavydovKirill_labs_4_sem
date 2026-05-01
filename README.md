@@ -1,17 +1,57 @@
-# Лабораторные работы и ДЗ по JavaScript
+# ЛР 4. Бэкенд на Express.js
 
 **Давыдов Кирилл Игоревич, ИУ5-44Б**
 
-Репозиторий оформлен по отдельным веткам: одна ветка = одна работа.
+## Цель работы
+Реализация REST API на Node.js/Express с хранением данных в JSON-файле.
 
-## Ветки
+## Что реализовано
 
-- `lab1-ui-branding` — ЛР 1 (интерфейс калькулятора, HTML/CSS, допы: фон, лого, кнопки)
-- `lab2-hex-result-color` — ЛР 2 (логика калькулятора, JS, доп: цвет результата из hex)
-- `lab3-dot-pagination-cards` — ЛР 3 (веб-приложение с карточками, по 2 карточки и навигация точками)
-- `homework-gif-model` — ДЗ (замена 3D-модели на GIF/видео-анимацию в блоке модели)
-- `lab4-express-crud-put` — ЛР 4 (Express API, CRUD + PUT)
+- Слой `routes/controllers/services`
+- CRUD для `stocks`
+- Фильтрация списка по `title`
+- Обработчики `404` и `500`
+- Логирование запросов
+- Добавлен метод `PUT /stocks/:id` (полная замена записи)
 
-## Как смотреть
+## Эндпоинты
 
-Откройте нужную ветку и README в ней — там цель, допзадания и как реализовано.
+- `GET /stocks`
+- `POST /stocks`
+- `GET /stocks/:id`
+- `PUT /stocks/:id`
+- `PATCH /stocks/:id`
+- `DELETE /stocks/:id`
+
+## Дополнение по PUT
+
+`PUT` реализован отдельным контроллером и сервисным методом:
+
+```js
+router.put("/:id", stocksController.replaceStock);
+```
+
+```js
+const replacedStock = stocksService.replace(id, { src, title, text });
+```
+
+```js
+stocks[stockIndex] = {
+  id,
+  ...stockData
+};
+```
+
+## Запуск
+```bash
+npm install
+npm run dev
+```
+
+## Проверка в Postman
+
+1. `GET http://localhost:3000/stocks`
+2. `POST http://localhost:3000/stocks`
+3. `PUT http://localhost:3000/stocks/1`
+4. `PATCH http://localhost:3000/stocks/1`
+5. `DELETE http://localhost:3000/stocks/1`
