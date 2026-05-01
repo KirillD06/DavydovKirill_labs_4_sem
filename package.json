@@ -1,0 +1,11 @@
+{
+  "name": "lab3-museum-gagarin",
+  "version": "1.0.0",
+  "description": "ЛР 3: двухстраничное приложение по мотивам museumgagarin.ru",
+  "scripts": {
+    "start": "npx live-server ."
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
