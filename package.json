@@ -1,0 +1,10 @@
+{
+  "name": "lab5-ajax-client",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ЛР 5: клиент на XMLHttpRequest для API из ЛР 4",
+  "scripts": {
+    "start": "npx live-server ."
+  }
+}
